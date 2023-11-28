@@ -17,3 +17,37 @@
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
+
+if (!class_exists('Plugin_Class')) {
+
+    final class Plugin_Class {
+
+        public function __construct() {
+
+        	$this->define();
+
+        	$this->include();
+
+        	$this->hook();
+        }
+
+        public function define() {
+
+        	// Define Constants
+        }
+
+        public function include() {
+
+        	// Include Files
+        }
+
+        public function hook() {
+
+            // Add Hooks
+        }
+
+    }
+
+    // Instantiate the class
+    $plugin_class = new Plugin_Class();
+}
