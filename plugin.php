@@ -54,4 +54,11 @@ if (!class_exists('Plugin_Class')) {
 
 $plugin_class = new Plugin_Class();
 
-$plugin_class->init();
+if (is_wp_error($plugin_class)) {
+
+    // Handle error, log, or display a message
+} 
+else {
+	
+    $plugin_class->init();
+}
