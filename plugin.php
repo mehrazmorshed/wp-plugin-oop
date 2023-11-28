@@ -22,7 +22,7 @@ if (!class_exists('Plugin_Class')) {
 
     final class Plugin_Class {
 
-        public function __construct() {
+        public function init() {
 
         	$this->define();
 
@@ -48,6 +48,10 @@ if (!class_exists('Plugin_Class')) {
 
     }
 
-    // Instantiate the class
-    $plugin_class = new Plugin_Class();
 }
+
+// Instantiate the class
+
+$plugin_class = new Plugin_Class();
+
+$plugin_class->init();
