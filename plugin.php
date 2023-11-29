@@ -34,11 +34,14 @@ if (!class_exists('Plugin_Class')) {
         public function define() {
 
         	// Define Constants
+            define( 'PLUGIN_FILE', __FILE__ );
+            define( 'PLUGIN_DIR', dirname( PLUGIN_FILE ) );
         }
 
         public function include() {
 
         	// Include Files
+            require_once( dirname( __FILE__ ) . '/inc/functions.php' );
         }
 
         public function hook() {
