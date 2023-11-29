@@ -41,7 +41,7 @@ if (!class_exists('Plugin_Class')) {
         public function include() {
 
         	// Include Files
-            require_once( dirname( __FILE__ ) . '/inc/functions.php' );
+            require_once( PLUGIN_DIR . '/inc/functions.php' );
         }
 
         public function hook() {
